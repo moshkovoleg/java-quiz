@@ -19,7 +19,7 @@ public class Main extends Application {
         controller.initialize();
 
         primaryStage.setTitle("Java Викторина");
-        primaryStage.setScene(new Scene(root, 800, 600));
+        primaryStage.setScene(new Scene(root, 1000, 700));
         primaryStage.show();
     }
 

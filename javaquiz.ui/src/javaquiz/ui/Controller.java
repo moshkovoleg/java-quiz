@@ -76,12 +76,12 @@ public class Controller {
             questionLabel.setVisible(false);
             checkButton.setDisable(true);
             nextButton.setDisable(true);
-            resultLabel.setText("Result = " + goal + " of " + numberOfQuestions + "\n\t"
+            resultLabel.setText("Result = " + goal + " of " + numberOfQuestions + "\n"
                     + goal * 100 / numberOfQuestions + "%");
         }
     }
 
-    public void setColorToText() {
+    private void setColorToText() {
         answerListView.setCellFactory(new Callback<ListView<Answer>, ListCell<Answer>>() {
             @Override
             public ListCell<Answer> call(ListView<Answer> answerListView) {

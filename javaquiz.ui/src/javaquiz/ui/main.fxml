@@ -1,40 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
+<?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
-<?import javafx.scene.control.cell.PropertyValueFactory?>
 <?import javafx.scene.layout.*?>
-<?import javafx.scene.text.Text?>
-<?import javafx.scene.control.skin.TableHeaderRow?>
+<?import javafx.scene.text.*?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
-            prefHeight="400.0" prefWidth="600.0"
-            fx:controller="javaquiz.ui.Controller" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javaquiz.ui.Controller">
     <top>
-          <Label fx:id="questionLabel" text="Here would be the question"
-                 BorderPane.alignment="CENTER"> </Label>
+          <Label fx:id="questionLabel" alignment="CENTER" contentDisplay="CENTER" text="Here would be the question" textAlignment="LEFT" wrapText="true" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets left="200.0" right="200.0" />
+         </BorderPane.margin>
+         <font>
+            <Font name="Times New Roman Bold" size="16.0" />
+         </font></Label>
     </top>
     <center>
-        <ListView fx:id="answerListView" BorderPane.alignment="CENTER" ></ListView>
+        <ListView fx:id="answerListView" prefHeight="250.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <BorderPane.margin>
+            <Insets left="50.0" right="50.0" />
+         </BorderPane.margin></ListView>
     </center>
     <right>
-       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="170.00" spacing="20.0"
-             BorderPane.alignment="CENTER">
+       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="170.00" spacing="20.0" BorderPane.alignment="CENTER">
             <children>
-                <Button fx:id="checkButton" onAction="#checkAnswer" maxWidth="Infinity"
-                        mnemonicParsing="false" text="Проверить"/>
-                <Button fx:id="nextButton" onAction="#updateQuestion" maxWidth="Infinity"
-                        mnemonicParsing="false" text="Следующий вопрос"/>
+                <Button fx:id="checkButton" maxWidth="Infinity" mnemonicParsing="false" onAction="#checkAnswer" text="Проверить" />
+                <Button fx:id="nextButton" maxWidth="Infinity" mnemonicParsing="false" onAction="#updateQuestion" text="Следующий вопрос" />
             </children>
             <BorderPane.margin>
-                <Insets right="10.0"/>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
             </BorderPane.margin>
        </VBox>
     </right>
     <bottom>
-        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER" >
+        <HBox alignment="CENTER" prefHeight="200.0" prefWidth="400.0" BorderPane.alignment="CENTER">
             <children>
-                <Label fx:id="resultLabel"  wrapText="true" HBox.hgrow="ALWAYS" > </Label>
+                <Label fx:id="resultLabel" alignment="CENTER" contentDisplay="CENTER" textAlignment="LEFT" wrapText="true" HBox.hgrow="ALWAYS">
+                <font>
+                            <Font name="Times New Roman Bold" size="16.0" />
+                </font>
+               <HBox.margin>
+                  <Insets left="100.0" right="100.0" />
+               </HBox.margin></Label>
             </children>
         </HBox>
     </bottom>
