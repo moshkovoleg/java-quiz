@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/javaquiz.common/javaquiz.common.iml" filepath="$PROJECT_DIR$/javaquiz.common/javaquiz.common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaquiz.db/javaquiz.db.iml" filepath="$PROJECT_DIR$/javaquiz.db/javaquiz.db.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaquiz.ui/javaquiz.ui.iml" filepath="$PROJECT_DIR$/javaquiz.ui/javaquiz.ui.iml" />
+    </modules>
+  </component>
+</project>
